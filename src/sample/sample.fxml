@@ -1,0 +1,14 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<GridPane fx:controller="sample.BackEnd"
+          stylesheets="/sample/Styles"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+            <Button GridPane.columnIndex="1" text="Blue" onAction = "#pressedBlue" stylesheets="Styles/Blue.css"/>
+            <Button GridPane.columnIndex="2" text="Yellow" onAction = "#pressedYellow" stylesheets="Styles/Yellow.css"/>
+            <Button GridPane.columnIndex="3" text="Green" onAction = "#pressedGreen" stylesheets="Styles/Green.css"/>
+            <Button GridPane.columnIndex="4" text="Red" onAction = "#pressedRed" stylesheets="Styles/Red.css"/>
+            <Label GridPane.rowIndex="1" GridPane.columnSpan="10" fx:id="pressedButtons" stylesheets="Styles/Styles.css" />
+</GridPane>
